@@ -1,0 +1,19 @@
+//Write a program to print given number is palindrome or not.
+#include<stdio.h>
+main()
+{
+	int i,n,sum=0,r,temp;
+	scanf("%d", &n);
+	temp=n;
+	while(n>0)
+	{
+		r=n%10;
+		sum=sum*10+r;
+		n=n/10;
+	}
+	if(temp==sum)
+		printf("It is a palindrome");
+	else
+		printf("It is not a plaindrome");
+}
+
